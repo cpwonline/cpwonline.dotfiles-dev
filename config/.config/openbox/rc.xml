@@ -222,6 +222,31 @@
 					<to>4</to>
 				</action>
 			</keybind>
+			<!-- Send windows to virtual desktop -->
+				<keybind key="W-C-Left">
+					<action name="SendToDesktop">
+						<to>left</to>
+						<wrap>no</wrap>
+					</action>
+				</keybind>
+				<keybind key="W-C-Right">
+					<action name="SendToDesktop">
+						<to>right</to>
+						<wrap>no</wrap>
+					</action>
+				</keybind>
+				<keybind key="W-C-Up">
+					<action name="SendToDesktop">
+						<to>up</to>
+						<wrap>no</wrap>
+					</action>
+				</keybind>
+				<keybind key="W-C-Down">
+					<action name="SendToDesktop">
+						<to>down</to>
+						<wrap>no</wrap>
+					</action>
+				</keybind>
 		<!-- Keybindings for windows -->
 			<!-- Normal -->
 				<keybind key="A-F4">
@@ -240,11 +265,11 @@
 					<action name="ToggleShowDesktop"/>
 				</keybind>
 			<!-- Others -->
-				<keybind key="A-Escape">
+				<!--<keybind key="A-Escape">
 					<action name="Lower"/>
 					<action name="FocusToBottom"/>
 					<action name="Unfocus"/>
-				</keybind>
+				</keybind>-->
 				<keybind key="A-space">
 					<action name="ShowMenu">
 						<menu>client-menu</menu>
@@ -269,6 +294,26 @@
 						</finalactions>
 					</action>
 				</keybind>
+				<keybind key="W-S-Right">
+					<action name="DirectionalCycleWindows">
+						<direction>right</direction>
+					</action>
+				</keybind>
+				<keybind key="W-S-Left">
+					<action name="DirectionalCycleWindows">
+						<direction>left</direction>
+					</action>
+				</keybind>
+				<keybind key="W-S-Up">
+					<action name="DirectionalCycleWindows">
+						<direction>up</direction>
+					</action>
+				</keybind>
+				<keybind key="W-S-Down">
+					<action name="DirectionalCycleWindows">
+						<direction>down</direction>
+					</action>
+				</keybind>
 				<!--
 				<keybind key="C-A-Tab">
 					<action name="NextWindow">
@@ -282,31 +327,6 @@
 					</action>
 				</keybind>
 				-->
-			<!-- Send windows to virtual desktop -->
-				<keybind key="A-Left">
-					<action name="SendToDesktop">
-						<to>left</to>
-						<wrap>no</wrap>
-					</action>
-				</keybind>
-				<keybind key="A-Right">
-					<action name="SendToDesktop">
-						<to>right</to>
-						<wrap>no</wrap>
-					</action>
-				</keybind>
-				<keybind key="A-Up">
-					<action name="SendToDesktop">
-						<to>up</to>
-						<wrap>no</wrap>
-					</action>
-				</keybind>
-				<keybind key="A-Down">
-					<action name="SendToDesktop">
-						<to>down</to>
-						<wrap>no</wrap>
-					</action>
-				</keybind>
 			<!-- Move windows to edge -->
 				<!-- 1/2 display-->
 					<keybind key="A-S-Left">
@@ -370,29 +390,6 @@
 						<action name="MoveToEdge"><direction>east</direction></action>
 						<action name="MoveToEdge"><direction>south</direction></action>
 					</keybind>
-			<!-- Keybindings for window switching with the arrow keys -->
-				<!--
-				<keybind key="W-S-Right">
-					<action name="DirectionalCycleWindows">
-						<direction>right</direction>
-					</action>
-				</keybind>
-				<keybind key="W-S-Left">
-					<action name="DirectionalCycleWindows">
-						<direction>left</direction>
-					</action>
-				</keybind>
-				<keybind key="W-S-Up">
-					<action name="DirectionalCycleWindows">
-						<direction>up</direction>
-					</action>
-				</keybind>
-				<keybind key="W-S-Down">
-					<action name="DirectionalCycleWindows">
-						<direction>down</direction>
-					</action>
-				</keybind>
-			-->
 		<!-- Keybindings for running applications -->
 			<keybind key="C-A-r">
 				<action name="Reconfigure"/>
