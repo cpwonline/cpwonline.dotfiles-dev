@@ -394,6 +394,9 @@
 				</keybind>
 			-->
 		<!-- Keybindings for running applications -->
+			<keybind key="C-A-r">
+				<action name="Reconfigure"/>
+			</keybind>
 			<keybind key="C-A-a">
 				<action name="Execute">
 					<startupnotify>
