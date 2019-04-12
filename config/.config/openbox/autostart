@@ -5,6 +5,6 @@ tint2 -c ~/.config/tint2/primary.tint2rc &
 xfce4-power-manager &
 xfce4-clipman &
 xfce4-notifyd &
-feh --bg-scale ~/.config/openbox/Wallpalper.png &
+~/.fehbg &
 compton -b &
 xscreensaver &
