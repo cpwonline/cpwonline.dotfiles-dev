@@ -2,6 +2,9 @@ configuration {
 	theme:				"DarkBlue";
 	modi:				"ssh,window,drun,run";
 	font:				"Roboto Mono 12";
+	ssh-client:			"ssh";
+	ssh-command:		"{terminal} -e '{ssh-client} {host}'";
+	color-enabled:		true;
 	separator-style:	"solid";
 	padding:			50;
 	columns:			2;
@@ -11,6 +14,5 @@ configuration {
 	disable-history:	true;
 	sidebar-mode:		true;
 	fullscreen:			false;
-	color-enabled:		true;
 	show-icons:			false;
 }
