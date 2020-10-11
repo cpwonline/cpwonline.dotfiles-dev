@@ -174,18 +174,18 @@ tooltip_font_color = #ffffff 80
 button = new
 button_icon = ~/.config/tint2/icons/terminal.svg
 button_text = 
-button_tooltip = "Terminal emulator"
+button_tooltip = 'Terminal emulator (rxvt-unicode)'
 # button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
 button_font_color = #ffffff 100
 button_background_id = 3
 button_centered = 0
 button_padding = 15 15 7
 button_max_icon_size = 0
-button_lclick_command = xfce4-terminal
-button_rclick_command = text: comando
-button_mclick_command = text: comando
-button_uwheel_command = text: comando
-button_dwheel_command = text: comando
+button_lclick_command = rxvt-unicode
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
 
 
 ### Button 2 (Files browser)
@@ -193,54 +193,54 @@ button_dwheel_command = text: comando
 button = new
 button_icon = ~/.config/tint2/icons/files.svg
 # button_text = 1
-button_tooltip = Terminal emulator
+button_tooltip = 'Files browser (Thunar)'
 # button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
 button_font_color = #ffffff 100
 button_background_id = 3
 button_centered = 1
 button_padding = 15 15 7
 button_max_icon_size = 0
-button_lclick_command = xfce4-terminal
-button_rclick_command = text: comando
-button_mclick_command = text: comando
-button_uwheel_command = text: comando
-button_dwheel_command = text: comando
+button_lclick_command = Thunar
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
  
 ### Button 3 (Web browser)
 
 button = new
 button_icon = ~/.config/tint2/icons/browser.svg
 # button_text = 1
-button_tooltip = Terminal emulator
+button_tooltip = 'Web browser (Firefox Developer)'
 # button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
 button_font_color = #ffffff 100
 button_background_id = 3
 button_centered = 1
 button_padding = 15 15 7
 button_max_icon_size = 0
-button_lclick_command = xfce4-terminal
-button_rclick_command = text: comando
-button_mclick_command = text: comando
-button_uwheel_command = text: comando
-button_dwheel_command = text: comando
+button_lclick_command = firefox-developer
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
 
 ### Button 4 (Editor)
 
 button = new
 button_icon = ~/.config/tint2/icons/editor.svg
 # button_text = 1
-button_tooltip = Terminal emulator
+button_tooltip = 'Code editor (Geany)'
 # button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
 button_font_color = #ffffff 100
 button_background_id = 3
 button_centered = 1
 button_padding = 15 15 7
 button_max_icon_size = 0
-button_lclick_command = xfce4-terminal
-button_rclick_command = text: comando
-button_mclick_command = text: comando
-button_uwheel_command = text: comando
-button_dwheel_command = text: comando
+button_lclick_command = geany
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
 
 ## Separators
 
