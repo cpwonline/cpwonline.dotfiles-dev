@@ -2,12 +2,7 @@
 
 ## Backgrounds
 
-### 1 Panel, tooltips
-
-background_color = #171717 80
-background_color_hover = #000000 0
-background_color_pressed = #000000 0
-background_content_tint_weight = 0
+### 1 Panel
 
 rounded = 0
 border_width = 0
@@ -16,43 +11,40 @@ border_color = #000000 0
 border_color_hover = #000000 0
 border_color_pressed = #000000 0
 border_content_tint_weight = 0
+background_color = #171717 80
+background_color_hover = #000000 0
+background_color_pressed = #000000 0
+background_content_tint_weight = 0
 
 ### 2 Taskbar
 
+rounded = 0
+border_width = 0
+border_sides = LRTB
+border_color = #000000 0
+border_color_hover = #000000 0
+border_color_pressed = #000000 0
+border_content_tint_weight = 0
 background_color = #171717 80
 background_color_hover = #000000 0
 background_color_pressed = #000000 0
 background_content_tint_weight = 0
 
+### 3 Buttons, Default tasks, iconified tasks
+
 rounded = 0
+border_content_tint_weight = 0
 border_width = 0
 border_sides = LRTB
 border_color = #000000 0
 border_color_hover = #000000 0
 border_color_pressed = #000000 0
-border_content_tint_weight = 0
-
-### 3 Buttons, Default tasks, iconified tasks
-
 background_color = #000000 0
 background_content_tint_weight = 0
 background_color_hover = #3399FF 70
-background_color_pressed = #3399FF 50
-
-rounded = 0
-border_content_tint_weight = 0
-border_width = 0
-border_sides = LRTB
-border_color = #000000 0
-border_color_hover = #000000 0
-border_color_pressed = #000000 0
+background_color_pressed = #3399FF 40
 
 ### 4 Active tasks
-
-background_color = #000000 0
-background_color_hover = #3399ff 100
-background_color_pressed = #3399ff 80
-background_content_tint_weight = 0
 
 rounded = 0
 border_width = 2
@@ -61,14 +53,13 @@ border_color = #FFFFFF 100
 border_color_hover = #FFFFFF 100
 border_color_pressed = #FFFFFF 100
 border_content_tint_weight = 0
+background_color = #000000 0
+background_color_hover = #3399ff 80
+background_color_pressed = #3399ff 60
+background_content_tint_weight = 0
 
 
 ### 5 Urgent tasks
-
-background_color = #B93E00 0
-background_color_hover = #636363 100
-background_color_pressed = #636363 80
-background_content_tint_weight = 0
 
 rounded = 0
 border_width = 0
@@ -77,21 +68,24 @@ border_color = #FFFFFF 100
 border_color_hover = #FFFFFF 100
 border_color_pressed = #FFFFFF 100
 border_content_tint_weight = 0
-
-### 6 Separators
-
-background_color = #000000 0
-background_color_hover = #000000 0
-background_color_pressed = #000000 0
+background_color = #B93E00 80
+background_color_hover = #636363 80
+background_color_pressed = #636363 60
 background_content_tint_weight = 0
 
+### 6 Tooltip
+
 rounded = 0
-border_width = 1
-border_sides = L
-border_color = #FFFFFF 70
-border_color_hover = #FFFFFF 70
-border_color_pressed = #FFFFFF 70
+border_width = 0
+border_sides = LRTB
+border_color = #000000 0
+border_color_hover = #000000 0
+border_color_pressed = #000000 0
 border_content_tint_weight = 0
+background_color = #3399ff 80
+background_color_hover = #3399ff 80
+background_color_pressed = #3399ff 80
+background_content_tint_weight = 0
 
 ## Panel
 
@@ -149,8 +143,8 @@ task_centered = 1
 task_tooltip = 1
 task_thumbnail = 1
 task_thumbnail_size = 250
-task_maximum_size = 200 35
-task_padding = 15 15 7
+task_maximum_size = 150 50
+task_padding = 5 5 7
 urgent_nb_of_blink = 100000
 task_font_color = #ffffff 100
 task_background_id = 3
@@ -182,8 +176,8 @@ clock_dwheel_command = text: comando a ejecutar en rueda scroll down
 tooltip_padding = 10 10
 tooltip_show_timeout = 0
 tooltip_hide_timeout = 0
-tooltip_background_id = 1
-tooltip_font = 1
+tooltip_background_id = 6
+# tooltip_font = 
 tooltip_font_color = #ffffff 80
 
 ## Buttons
@@ -193,7 +187,7 @@ tooltip_font_color = #ffffff 80
 button = new
 button_icon = ~/.config/tint2/icons/terminal.svg
 button_text = 
-button_tooltip = 'Terminal emulator (rxvt-unicode)'
+# button_tooltip = 'Terminal emulator (rxvt-unicode)'
 # button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
 button_font_color = #ffffff 100
 button_background_id = 3
@@ -212,7 +206,7 @@ button_dwheel_command =
 button = new
 button_icon = ~/.config/tint2/icons/files.svg
 # button_text = 1
-button_tooltip = 'Files browser (Thunar)'
+# button_tooltip = 'Files browser (Thunar)'
 # button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
 button_font_color = #ffffff 100
 button_background_id = 3
@@ -230,7 +224,7 @@ button_dwheel_command =
 button = new
 button_icon = ~/.config/tint2/icons/browser.svg
 # button_text = 1
-button_tooltip = 'Web browser (Firefox Developer)'
+# button_tooltip = 'Web browser (Firefox Developer)'
 # button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
 button_font_color = #ffffff 100
 button_background_id = 3
@@ -248,7 +242,7 @@ button_dwheel_command =
 button = new
 button_icon = ~/.config/tint2/icons/editor.svg
 # button_text = 1
-button_tooltip = 'Code editor (Geany)'
+# button_tooltip = 'Code editor (Geany)'
 # button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
 button_font_color = #ffffff 100
 button_background_id = 3
@@ -266,17 +260,17 @@ button_dwheel_command =
 ### Separator 1
 
 separator = new
-separator_background_id = 5
-separator_color = #ffffff 80
+separator_background_id = 0
+separator_color = #ffffff 20
 separator_style = line
-separator_size = 5
+separator_size = 2
 separator_padding = 0 0
 
 ### Separator 2
 
 separator = new
-separator_background_id = 5
-separator_color = #ffffff 80
+separator_background_id = 0
+separator_color = #ffffff 20
 separator_style = line
-separator_size = 5
+separator_size = 2
 separator_padding = 0 0
