@@ -2,7 +2,7 @@
 
 ## Backgrounds
 
-### Panel, tooltips
+### 1 Panel, tooltips
 
 background_color = #171717 80
 background_color_hover = #000000 0
@@ -17,7 +17,7 @@ border_color_hover = #000000 0
 border_color_pressed = #000000 0
 border_content_tint_weight = 0
 
-### Taskbar
+### 2 Taskbar
 
 background_color = #171717 80
 background_color_hover = #000000 0
@@ -32,7 +32,7 @@ border_color_hover = #000000 0
 border_color_pressed = #000000 0
 border_content_tint_weight = 0
 
-### Buttons, Default tasks, iconified tasks
+### 3 Buttons, Default tasks, iconified tasks
 
 background_color = #000000 0
 background_content_tint_weight = 0
@@ -47,7 +47,7 @@ border_color = #000000 0
 border_color_hover = #000000 0
 border_color_pressed = #000000 0
 
-### Active tasks
+### 4 Active tasks
 
 background_color = #000000 0
 background_color_hover = #3399ff 100
@@ -62,7 +62,23 @@ border_color_hover = #FFFFFF 100
 border_color_pressed = #FFFFFF 100
 border_content_tint_weight = 0
 
-### Separators
+
+### 5 Urgent tasks
+
+background_color = #B93E00 0
+background_color_hover = #636363 100
+background_color_pressed = #636363 80
+background_content_tint_weight = 0
+
+rounded = 0
+border_width = 0
+border_sides = LRTB
+border_color = #FFFFFF 100
+border_color_hover = #FFFFFF 100
+border_color_pressed = #FFFFFF 100
+border_content_tint_weight = 0
+
+### 6 Separators
 
 background_color = #000000 0
 background_color_hover = #000000 0
@@ -70,11 +86,11 @@ background_color_pressed = #000000 0
 background_content_tint_weight = 0
 
 rounded = 0
-border_width = 2
+border_width = 1
 border_sides = L
-border_color = #FFFFFF 100
-border_color_hover = #FFFFFF 100
-border_color_pressed = #FFFFFF 100
+border_color = #FFFFFF 70
+border_color_hover = #FFFFFF 70
+border_color_pressed = #FFFFFF 70
 border_content_tint_weight = 0
 
 ## Panel
@@ -82,7 +98,7 @@ border_content_tint_weight = 0
 panel_items = PPPP:T:C
 panel_monitor = all
 panel_position = center left vertical
-panel_size = 100% 70
+panel_size = 100% 50
 panel_shrink = 0
 panel_margin = 0 0
 panel_padding = 0 0 7
@@ -133,11 +149,14 @@ task_centered = 1
 task_tooltip = 1
 task_thumbnail = 1
 task_thumbnail_size = 250
-task_maximum_size = 150 35
-task_padding = 0 0 7
+task_maximum_size = 200 35
+task_padding = 15 15 7
 urgent_nb_of_blink = 100000
 task_font_color = #ffffff 100
 task_background_id = 3
+task_active_background_id = 4
+task_urgent_background_id = 5
+task_iconified_background_id = 3
 
 ## Clock
 
