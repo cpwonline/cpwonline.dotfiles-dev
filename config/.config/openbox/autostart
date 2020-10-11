@@ -1,11 +1,10 @@
-# volumeicon &
-compton &
-tint2 &
-conky &
-lxpolkit &
+tint2 -c ~/.config/tint2/primary.tint2rc &# volumeicon &
+# conky &
+# lxpolkit &
+# redshift-gtk -c ~/.config/redshift/redshift.conf &
 xfce4-power-manager &
 xfce4-clipman &
-redshift-gtk -c ~/.config/redshift/redshift.conf &
-openbox &
 xfce4-notifyd &
-feh --bg-scale ~/Pictures/Personal/Wallpapers/sunset_forest_nature_sky.jpg
+feh --bg-scale ~/.config/openbox/Wallpalper.png
+compton -b &
+xscreensaver &
