@@ -2,7 +2,7 @@
 
 ## Backgrounds
 
-### Panel
+### Panel, tooltips
 
 background_color = #171717 80
 background_color_hover = #000000 0
@@ -35,17 +35,17 @@ border_content_tint_weight = 0
 ### Buttons, Default tasks, iconified tasks
 
 background_color = #000000 0
-background_color_hover = #3399FF 100
-background_color_pressed = #3399FF 80
 background_content_tint_weight = 0
+background_color_hover = #3399FF 70
+background_color_pressed = #3399FF 50
 
 rounded = 0
+border_content_tint_weight = 0
 border_width = 0
 border_sides = LRTB
 border_color = #000000 0
 border_color_hover = #000000 0
 border_color_pressed = #000000 0
-border_content_tint_weight = 0
 
 ### Active tasks
 
@@ -91,13 +91,13 @@ panel_background_id = 1
 wm_menu = 1
 panel_dock = 0
 panel_pivot_struts = 0
-panel_layer = top
+panel_layer = normal
 strut_policy = follow_size
 panel_window_name = principal
 disable_transparency = 0
 mouse_effects = 1
-mouse_hover_icon_asb = 0 0 0
-mouse_pressed_icon_asb = 0 0 0
+mouse_hover_icon_asb = 100 0 10
+mouse_pressed_icon_asb = 100 0 0
 autohide = 0
 autohide_show_timeout = 0
 autohide_hide_timeout = 0
@@ -139,22 +139,125 @@ urgent_nb_of_blink = 100000
 task_font_color = #ffffff 100
 task_background_id = 3
 
+## Clock
+
+time1_format = %H
+time1_timezone = 
+time1_font = 
+time2_format = %M %p
+time2_timezone = 
+time2_font = 
+clock_font_color = #ffffff 80
+clock_padding = 0 0
+clock_background_id = 0
+clock_tooltip = %a, %d. %b %Y
+clock_tooltip_timezone = 
+clock_lclick_command = text: comando a ejecutar al dar clic izquierdo
+clock_rclick_command = text: comando a ejecutar al dar clic derecho
+clock_mclick_command = text: comando a ejecutar al dar clic central
+clock_uwheel_command = text: comando a ejecutar en rueda scroll up
+clock_dwheel_command = text: comando a ejecutar en rueda scroll down
+
+## Tooltip
+
+tooltip_padding = 10 10
+tooltip_show_timeout = 0
+tooltip_hide_timeout = 0
+tooltip_background_id = 1
+tooltip_font = 1
+tooltip_font_color = #ffffff 80
+
 ## Buttons
 
 ### Button 1 (Terminal)
 
 button = new
-button_icon = ~/.config/tint2/icons/terminal.png
-button_text = 1
+button_icon = ~/.config/tint2/icons/terminal.svg
+button_text = 
+button_tooltip = "Terminal emulator"
+# button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
+button_font_color = #ffffff 100
+button_background_id = 3
+button_centered = 0
+button_padding = 0 0 7
+button_max_icon_size = 0
+button_lclick_command = xfce4-terminal
+button_rclick_command = text: comando
+button_mclick_command = text: comando
+button_uwheel_command = text: comando
+button_dwheel_command = text: comando
+
+
+### Button 2 (Files browser)
+
+button = new
+button_icon = ~/.config/tint2/icons/files.svg
+# button_text = 1
 button_tooltip = Terminal emulator
 # button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
 button_font_color = #ffffff 100
 button_background_id = 3
 button_centered = 1
 button_padding = 0 0 7
-button_max_icon_size = 250
+button_max_icon_size = 0
 button_lclick_command = xfce4-terminal
 button_rclick_command = text: comando
 button_mclick_command = text: comando
 button_uwheel_command = text: comando
 button_dwheel_command = text: comando
+ 
+### Button 3 (Web browser)
+
+button = new
+button_icon = ~/.config/tint2/icons/browser.svg
+# button_text = 1
+button_tooltip = Terminal emulator
+# button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
+button_font_color = #ffffff 100
+button_background_id = 3
+button_centered = 1
+button_padding = 0 0 7
+button_max_icon_size = 0
+button_lclick_command = xfce4-terminal
+button_rclick_command = text: comando
+button_mclick_command = text: comando
+button_uwheel_command = text: comando
+button_dwheel_command = text: comando
+
+### Button 4 (Editor)
+
+button = new
+button_icon = ~/.config/tint2/icons/editor.svg
+# button_text = 1
+button_tooltip = Terminal emulator
+# button_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]: fuente del botón
+button_font_color = #ffffff 100
+button_background_id = 3
+button_centered = 1
+button_padding = 0 0 7
+button_max_icon_size = 0
+button_lclick_command = xfce4-terminal
+button_rclick_command = text: comando
+button_mclick_command = text: comando
+button_uwheel_command = text: comando
+button_dwheel_command = text: comando
+
+## Separators
+
+### Separator 1
+
+separator = new
+separator_background_id = 5
+separator_color = #ffffff 80
+separator_style = line
+separator_size = 5
+separator_padding = 0 0
+
+### Separator 2
+
+separator = new
+separator_background_id = 5
+separator_color = #ffffff 80
+separator_style = line
+separator_size = 5
+separator_padding = 0 0
