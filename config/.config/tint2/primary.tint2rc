@@ -156,20 +156,20 @@ task_iconified_background_id = 3
 
 time1_format = %H
 time1_timezone = 
-time1_font = 
+time1_font = roboto-condensed bold 13
 time2_format = %M %p
 time2_timezone = 
-time2_font = 
+time2_font = eoboto-condensed ligth 11
 clock_font_color = #ffffff 80
-clock_padding = 0 0
+clock_padding = 5 3
 clock_background_id = 0
-clock_tooltip = %a, %d. %b %Y
+clock_tooltip = %a, %d %b. (%m) %Y
 clock_tooltip_timezone = 
-clock_lclick_command = text: comando a ejecutar al dar clic izquierdo
-clock_rclick_command = text: comando a ejecutar al dar clic derecho
-clock_mclick_command = text: comando a ejecutar al dar clic central
-clock_uwheel_command = text: comando a ejecutar en rueda scroll up
-clock_dwheel_command = text: comando a ejecutar en rueda scroll down
+clock_lclick_command = orage
+clock_rclick_command = 
+clock_mclick_command = 
+clock_uwheel_command = 
+clock_dwheel_command = 
 
 ## Tooltip
 
@@ -261,16 +261,16 @@ button_dwheel_command =
 
 separator = new
 separator_background_id = 0
-separator_color = #ffffff 20
+separator_color = #ffffff 15
 separator_style = line
 separator_size = 2
-separator_padding = 0 0
+separator_padding = 10 10
 
 ### Separator 2
 
 separator = new
 separator_background_id = 0
-separator_color = #ffffff 20
+separator_color = #ffffff 15
 separator_style = line
 separator_size = 2
-separator_padding = 0 0
+separator_padding = 10 10
