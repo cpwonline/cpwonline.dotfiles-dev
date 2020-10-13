@@ -1,10 +1,10 @@
-tint2 -c ~/.config/tint2/primary.tint2rc &# volumeicon &
+tint2 -c ~/.config/tint2/primary.tint2rc &
+# volumeicon &
 # conky &
-# lxpolkit &
 # redshift-gtk -c ~/.config/redshift/redshift.conf &
 xfce4-power-manager &
 xfce4-clipman &
 xfce4-notifyd &
-feh --bg-scale ~/.config/openbox/Wallpalper.png
+feh --bg-scale ~/.config/openbox/Wallpalper.png &
 compton -b &
 xscreensaver &
