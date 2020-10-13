@@ -298,6 +298,39 @@
 							</action>
 							<action name="MoveToEdge"><direction>south</direction></action>
 						</keybind>
+					<!-- 1/4 display-->
+						<keybind key="A-S-1">
+							<action name="MoveResizeTo">
+								<width>50%</width>
+								<height>50%</height>
+							</action>
+							<action name="MoveToEdge"><direction>west</direction></action>
+							<action name="MoveToEdge"><direction>north</direction></action>
+						</keybind>
+						<keybind key="A-S-2">
+							<action name="MoveResizeTo">
+								<width>50%</width>
+								<height>50%</height>
+							</action>
+							<action name="MoveToEdge"><direction>east</direction></action>
+							<action name="MoveToEdge"><direction>north</direction></action>
+						</keybind>
+						<keybind key="A-S-3">
+							<action name="MoveResizeTo">
+								<width>50%</width>
+								<height>50%</height>
+							</action>
+							<action name="MoveToEdge"><direction>west</direction></action>
+							<action name="MoveToEdge"><direction>south</direction></action>
+						</keybind>
+						<keybind key="A-S-4">
+							<action name="MoveResizeTo">
+								<width>50%</width>
+								<height>50%</height>
+							</action>
+							<action name="MoveToEdge"><direction>east</direction></action>
+							<action name="MoveToEdge"><direction>south</direction></action>
+						</keybind>
 			<!-- Keybindings for window switching -->
 				<keybind key="A-Tab">
 					<action name="NextWindow">
