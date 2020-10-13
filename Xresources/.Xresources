@@ -33,7 +33,7 @@ URxvt.foreground: 7
 URxvt.cursorColor:#3399FF
 URxvt.cursorBlink:true
 URxvt.font: xft:roboto-mono:pixelsize=12
-URxvt.letterSpace:-3
+URxvt.letterSpace:-4
 URxvt.perl-ext-common: default,tabbed
 URxvt.tabbed.tab-bg: 4
 URxvt.tabbed.tab-fg: 7
