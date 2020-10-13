@@ -227,10 +227,16 @@
 				<keybind key="A-F4">
 					<action name="Close"/>
 				</keybind>
-					<keybind key="A-i">
-						<action name="Iconify"/>
-					</keybind>
-				<keybind key="A-d">
+				<keybind key="A-S-i">
+					<action name="Iconify"/>
+				</keybind>
+				<keybind key="A-S-m">
+					<action name="Maximize"/>
+				</keybind>
+				<keybind key="A-S-u">
+					<action name="Unmaximize"/>
+				</keybind>
+				<keybind key="A-S-d">
 					<action name="ToggleShowDesktop"/>
 				</keybind>
 			<!-- Others -->
