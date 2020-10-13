@@ -350,6 +350,7 @@
 						</finalactions>
 					</action>
 				</keybind>
+				<!--
 				<keybind key="C-A-Tab">
 					<action name="NextWindow">
 						<panels>yes</panels>
@@ -361,7 +362,9 @@
 						</finalactions>
 					</action>
 				</keybind>
+				-->
 			<!-- Keybindings for window switching with the arrow keys -->
+				<!--
 				<keybind key="W-S-Right">
 					<action name="DirectionalCycleWindows">
 						<direction>right</direction>
@@ -382,8 +385,9 @@
 						<direction>down</direction>
 					</action>
 				</keybind>
+			-->
 		<!-- Keybindings for running applications -->
-			<keybind key="W-a">
+			<keybind key="C-A-a">
 				<action name="Execute">
 					<startupnotify>
 						<enabled>true</enabled>
@@ -392,7 +396,7 @@
 					<command>rofi -show run</command>
 				</action>
 			</keybind>
-			<keybind key="W-w">
+			<keybind key="C-A-w">
 				<action name="Execute">
 					<startupnotify>
 						<enabled>true</enabled>
