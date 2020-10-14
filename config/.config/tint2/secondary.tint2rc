@@ -16,7 +16,7 @@ background_color_hover = #000000 0
 background_color_pressed = #000000 0
 background_content_tint_weight = 0
 
-### 2 Button, perfil
+### 2 Perfil
 
 rounded = 0
 border_content_tint_weight = 0
@@ -29,6 +29,20 @@ background_color = #3399FF 70
 background_content_tint_weight = 0
 background_color_hover = #3399FF 50
 background_color_pressed = #000000 40
+
+### 3 Buttons
+
+rounded = 0
+border_content_tint_weight = 0
+border_width = 0
+border_sides = LRTB
+border_color = #000000 0
+border_color_hover = #000000 0
+border_color_pressed = #000000 0
+background_color = #000000 0
+background_content_tint_weight = 0
+background_color_hover = #3399FF 80
+background_color_pressed = #3399FF 60
 
 ### 3 Tooltip
 
@@ -46,7 +60,7 @@ background_content_tint_weight = 0
 
 ## Panel
 
-panel_items = P:
+panel_items = P:PPP
 panel_monitor = all
 panel_position = center right vertical
 panel_size = 100% 150
@@ -81,19 +95,73 @@ tooltip_font_color = #ffffff 80
 
 ## Buttons
 
-### Button 1 (Terminal)
+### Button 1 (Perfil)
 
 button = new
 button_icon = ~/.face
 button_text = 
-# button_tooltip = 'Terminal emulator (rxvt-unicode)'
-# button_font = Roboto Condensed 14
+# button_tooltip = 
+# button_font = 
 button_font_color = #ffffff 100
 button_background_id = 2
 button_centered = 0
 button_padding = 20 5 7
 button_max_icon_size = 0
 button_lclick_command = mugshot
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+
+### Button 2 (Log out)
+
+button = new
+button_icon = ~/.config/tint2/icons/terminal.svg
+button_text = Log out
+# button_tooltip = 
+# button_font = 
+button_font_color = #ffffff 80
+button_background_id = 3
+button_centered = 0
+button_padding = 5 5 7
+button_max_icon_size = 30
+button_lclick_command = logout
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+
+### Button 3 (Reboot)
+
+button = new
+button_icon = ~/.config/tint2/icons/terminal.svg
+button_text = Reboot
+# button_tooltip = 
+# button_font = 
+button_font_color = #ffffff 80
+button_background_id = 3
+button_centered = 0
+button_padding = 5 5 7
+button_max_icon_size = 30
+button_lclick_command = reboot
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+
+### Button 4 (Shut down)
+
+button = new
+button_icon = ~/.config/tint2/icons/terminal.svg
+button_text = Shut down
+# button_tooltip = 
+# button_font = 
+button_font_color = #ffffff 100
+button_background_id = 3
+button_centered = 0
+button_padding = 5 5 7
+button_max_icon_size = 30
+button_lclick_command = init 0
 button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 
