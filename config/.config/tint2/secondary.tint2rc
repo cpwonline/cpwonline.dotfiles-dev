@@ -44,7 +44,7 @@ background_content_tint_weight = 0
 background_color_hover = #3399FF 80
 background_color_pressed = #3399FF 60
 
-### 3 Tooltip
+### 4 Tooltip
 
 rounded = 0
 border_width = 0
@@ -60,7 +60,7 @@ background_content_tint_weight = 0
 
 ## Panel
 
-panel_items = P:PPP
+panel_items = PPPPS
 panel_monitor = all
 panel_position = center right vertical
 panel_size = 100% 150
@@ -84,12 +84,22 @@ autohide_show_timeout = 0.5
 autohide_hide_timeout = 0
 autohide_height = 0
 
+## Sistem tray
+
+systray_padding = 0 4 2
+systray_background_id = 0
+systray_icon_size = 24
+systray_icon_asb = 100 0 0
+systray_monitor = all
+systray_name_filter = 
+systray_sort = ascending
+
 ## Tooltip
 
 tooltip_padding = 10 10
 tooltip_show_timeout = 0
 tooltip_hide_timeout = 0
-tooltip_background_id = 6
+tooltip_background_id = 4
 # tooltip_font = 
 tooltip_font_color = #ffffff 80
 
