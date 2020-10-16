@@ -4,11 +4,13 @@ configuration {
 	font:				"Roboto Mono 12";
 	separator-style:	"solid";
 	padding:			50;
-	line-margin:		5;
+	columns:			2;
 	lines:				10;
+	line-margin:		5;
 	width:				720;
 	disable-history:	true;
 	sidebar-mode:		true;
 	fullscreen:			false;
 	color-enabled:		true;
+	show-icons:			false;
 }
