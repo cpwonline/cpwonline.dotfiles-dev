@@ -1,0 +1,12 @@
+rofi.theme: /usr/share/rofi/themes/gruvbox-dark.rasi
+rofi.separator-style:   solid
+rofi.font:              Roboto Mono 12
+rofi.color-enabled:     true
+rofi.padding:           50
+rofi.line-margin:       5
+rofi.lines:             10
+rofi.width:             720
+rofi.disable-history:   true
+rofi.modi:              ssh,drun,window,run
+rofi.sidebar-mode:      true
+rofi.fullscreen:        false
