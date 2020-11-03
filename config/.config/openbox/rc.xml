@@ -177,6 +177,10 @@
 	</dock>
 	<keyboard>
 		<chainQuitKey>C-g</chainQuitKey>
+		<!-- Reconfigure -->
+			<keybind key="W-r">
+				<action name="Reconfigure"/>
+			</keybind>
 		<!-- Keybindings for virtual desktop switching -->
 			<keybind key="W-Left">
 				<action name="GoToDesktop">
@@ -400,9 +404,6 @@
 						<action name="MoveToEdge"><direction>south</direction></action>
 					</keybind>
 		<!-- Keybindings for running applications -->
-			<keybind key="C-A-r">
-				<action name="Reconfigure"/>
-			</keybind>
 			<keybind key="C-A-a">
 				<action name="Execute">
 					<startupnotify>
