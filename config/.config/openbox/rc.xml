@@ -222,31 +222,40 @@
 					<to>4</to>
 				</action>
 			</keybind>
-			<!-- Send windows to virtual desktop -->
-				<keybind key="W-C-Left">
-					<action name="SendToDesktop">
-						<to>left</to>
-						<wrap>no</wrap>
-					</action>
-				</keybind>
-				<keybind key="W-C-Right">
-					<action name="SendToDesktop">
-						<to>right</to>
-						<wrap>no</wrap>
-					</action>
-				</keybind>
-				<keybind key="W-C-Up">
-					<action name="SendToDesktop">
-						<to>up</to>
-						<wrap>no</wrap>
-					</action>
-				</keybind>
-				<keybind key="W-C-Down">
-					<action name="SendToDesktop">
-						<to>down</to>
-						<wrap>no</wrap>
-					</action>
-				</keybind>
+		<!-- New virtual desktops -->
+			<keybind key="W-n">
+				<action name="AddDesktop">
+					<where>last</where>
+				</action>
+			</keybind>
+			<keybind key="W-d">
+				<action name="RemoveDesktop"/>
+			</keybind>
+		<!-- Send windows to virtual desktop -->
+			<keybind key="W-C-Left">
+				<action name="SendToDesktop">
+					<to>left</to>
+					<wrap>no</wrap>
+				</action>
+			</keybind>
+			<keybind key="W-C-Right">
+				<action name="SendToDesktop">
+					<to>right</to>
+					<wrap>no</wrap>
+				</action>
+			</keybind>
+			<keybind key="W-C-Up">
+				<action name="SendToDesktop">
+					<to>up</to>
+					<wrap>no</wrap>
+				</action>
+			</keybind>
+			<keybind key="W-C-Down">
+				<action name="SendToDesktop">
+					<to>down</to>
+					<wrap>no</wrap>
+				</action>
+			</keybind>
 		<!-- Keybindings for windows -->
 			<!-- Normal -->
 				<keybind key="A-F4">
