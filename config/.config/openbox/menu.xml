@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
-	<menu id="applications-menu" label="Applications" execute="/usr/libexec/openbox-xdg-menu applications"/>
+	<!--<menu id="applications-menu" label="Applications" execute="/usr/libexec/openbox-xdg-menu applications"/>
 	<menu id="preferences-menu" label="Preferences" execute="/usr/libexec/openbox-xdg-menu preferences"/>
 	<menu id="administration-menu" label="Administration" execute="/usr/libexec/openbox-xdg-menu system-settings"/>
 	<menu id="terminals-menu" label="Terminals" execute="/usr/libexec/openbox-xdg-menu /etc/xdg/openbox/terminals"/>
-	
+	--
+	<menu id="applications-new" label="Apps" execute="~/.config/openbox/view-apps.csh"/>
+	-->
 	<menu id="root-menu" label="Openbox 3">
 		<separator label="CPW Online"/>
+		<menu id="applications-new"/>
 		<menu id="general" label="General">
-			<menu id="applications-menu"/>
-			<separator/>
-			<menu id="preferences-menu"/>
-			<menu id="administration-menu"/>
-			<separator/>
-			<menu id="terminals-menu"/>
+			<menu id="applications-menu" label="Applications" execute="~/.config/openbox/view-apps.csh --applications"/>
+			<menu id="preferences-menu" label="Preferences" execute="~/.config/openbox/view-apps.csh --preferences"/>
+			<menu id="settings-menu" label="System settings" execute="~/.config/openbox/view-apps.csh --system-settings"/>
+			<menu id="terminals-menu" label="Terminals" execute="~/.config/openbox/view-apps.csh --terminals"/>
+
 		</menu>
 		<separator/>
 		<menu id="system" label="System">
-			<item label="Reconfigure">
+			<item label="Reconfigure Openbox">
 				<action name="Reconfigure" />
 			</item>
 			<item label="Edit Openbox Menu">

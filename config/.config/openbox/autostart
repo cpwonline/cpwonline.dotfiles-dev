@@ -8,3 +8,4 @@ xfce4-notifyd &
 ~/.fehbg &
 compton -b &
 xscreensaver &
+~/.config/openbox/view-apps.csh --applications
