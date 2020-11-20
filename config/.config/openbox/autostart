@@ -6,7 +6,7 @@ xfce4-power-manager &
 xfce4-clipman &
 xfce4-notifyd &
 ~/.fehbg &
-compton -b &
+picom -b &
 xscreensaver &
 ~/.config/openbox/view-apps.csh --start &
 lxpolkit &
