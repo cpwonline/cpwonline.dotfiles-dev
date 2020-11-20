@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-fill '/home/josefelixrc/.config/openbox/Wallpalper.png' 
+feh --bg-fill ~/.config/openbox/Wallpalper.png

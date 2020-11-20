@@ -8,5 +8,5 @@ xfce4-notifyd &
 ~/.fehbg &
 compton -b &
 xscreensaver &
-~/.config/openbox/view-apps.csh --applications &
+~/.config/openbox/view-apps.csh --start &
 lxpolkit &
