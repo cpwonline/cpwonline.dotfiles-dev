@@ -16,7 +16,11 @@
 			<menu id="preferences-menu" label="Preferences" execute="~/.config/openbox/view-apps.csh --preferences"/>
 			<menu id="settings-menu" label="System settings" execute="~/.config/openbox/view-apps.csh --system-settings"/>
 			<menu id="terminals-menu" label="Terminals" execute="~/.config/openbox/view-apps.csh --terminals"/>
-
+			<item label="Restart menu">
+				<action name="Execute">
+					<command>~/.config/openbox/view-apps.csh --restart</command>
+				</action>
+			</item>
 		</menu>
 		<separator/>
 		<menu id="system" label="System">
