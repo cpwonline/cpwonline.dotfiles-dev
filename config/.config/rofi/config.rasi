@@ -1,18 +1,18 @@
 configuration {
 	theme:				"DarkBlue";
-	modi:				"ssh,window,drun,run";
+	modi:				"ssh,window,run,drun";
 	font:				"Roboto Mono 12";
 	ssh-client:			"ssh";
-	ssh-command:		"{terminal} -e '{ssh-client} {host}'";
-	color-enabled:		true;
-	separator-style:	"solid";
+	ssh-command:			"{terminal} -e '{ssh-client} {host}'";
+	color-enabled:			true;
+	separator-style:		"solid";
 	padding:			50;
 	columns:			2;
 	lines:				10;
-	line-margin:		5;
+	line-margin:			5;
 	width:				720;
-	disable-history:	true;
-	sidebar-mode:		true;
+	disable-history:		true;
+	sidebar-mode:			true;
 	fullscreen:			false;
 	show-icons:			false;
 }
