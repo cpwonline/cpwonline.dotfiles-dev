@@ -5,7 +5,7 @@ tint2 -c ~/.config/tint2/primary.tint2rc &
 xfce4-power-manager &
 xfce4-clipman &
 xfce4-notifyd &
-~/.fehbg &
+feh --bg-fill '/home/josefelixrc7/.config/openbox/Wallpalper.png' &
 picom -b &
 xscreensaver &
 ~/.config/openbox/view-apps.csh --start &
