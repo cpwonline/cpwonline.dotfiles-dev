@@ -1,12 +1,22 @@
+# Principal
+picom -b &
 tint2 -c ~/.config/tint2/primary.tint2rc &
-# volumeicon &
+tint2 -c ~/.config/tint2/secondary.tint2rc &
+feh --bg-fill '/home/josefelixrc7/.config/openbox/Wallpalper.png' &
+~/.config/openbox/view-apps.csh --start &
+
+# Secondary
+xscreensaver &
 # conky &
 # redshift-gtk -c ~/.config/redshift/redshift.conf &
-xfce4-power-manager &
-xfce4-clipman &
-xfce4-notifyd &
-feh --bg-fill '/home/josefelixrc7/.config/openbox/Wallpalper.png' &
-picom -b &
-xscreensaver &
-~/.config/openbox/view-apps.csh --start &
+
+# Daemons
 lxpolkit &
+xfce4-notifyd &
+xfce4-power-manager &
+
+# Applets
+xfce4-clipman &
+xfce4-battery-plugin &
+network-manager-applet &
+volumeicon &
