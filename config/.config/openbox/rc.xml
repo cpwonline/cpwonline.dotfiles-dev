@@ -184,6 +184,13 @@
 					<command>notify-send 'Openbox reconfigured.'</command>
 				</action>
 			</keybind>
+		<!-- Exit -->
+			<keybind key="W-e">
+				<action name="Exit">
+					<prompt>yes</prompt>
+				</action>
+			</keybind>
+		
 		<!-- Keybindings for virtual desktop switching -->
 			<keybind key="W-Left">
 				<action name="GoToDesktop">
