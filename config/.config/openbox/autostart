@@ -19,4 +19,4 @@ xfce4-power-manager &
 xfce4-clipman &
 xfce4-battery-plugin &
 network-manager-applet &
-volumeicon &
+# volumeicon &
