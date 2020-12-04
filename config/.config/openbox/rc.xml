@@ -180,6 +180,9 @@
 		<!-- Reconfigure -->
 			<keybind key="W-r">
 				<action name="Reconfigure"/>
+				<action name="Execute">
+					<command>notify-send 'Openbox reconfigured.'</command>
+				</action>
 			</keybind>
 		<!-- Keybindings for virtual desktop switching -->
 			<keybind key="W-Left">
@@ -262,21 +265,51 @@
 			</keybind>
 		<!-- Keybindings for windows -->
 			<!-- Normal -->
+				<!--Close-->
 				<keybind key="W-F4">
 					<action name="Close"/>
 				</keybind>
+				<!--Iconify-->
 				<keybind key="W-i">
 					<action name="Iconify"/>
 				</keybind>
+				<!--Maximize / Unmaximize-->
 				<keybind key="W-m">
-					<action name="Maximize"/>
+					<action name="If">
+						<query>
+							<maximized>yes</maximized>
+						</query>
+						<then>
+							<action name="Unmaximize"/>
+						</then>
+						<else>
+							<action name="Maximize"/>
+						</else>
+					</action>
 				</keybind>
-				<keybind key="W-u">
-					<action name="Unmaximize"/>
+				<!--Shade / Unshade-->
+				<keybind key="W-s">
+					<action name="If">
+						<query>
+							<shaded>yes</shaded>
+						</query>
+						<then>
+							<action name="Unshade"/>
+						</then>
+						<else>
+							<action name="Shade"/>
+						</else>
+					</action>
 				</keybind>
+				<!--Omnipresent or not-->
 				<keybind key="W-o">
+					<action name="ToggleOmnipresent"/>
+				</keybind>
+				<!--Move-->
+				<keybind key="W-v">
 					<action name="move"/>
 				</keybind>
+				<!--Show / hide desktop-->
 				<keybind key="W-d">
 					<action name="ToggleShowDesktop"/>
 				</keybind>
