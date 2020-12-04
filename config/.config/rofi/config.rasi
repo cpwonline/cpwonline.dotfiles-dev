@@ -1,7 +1,7 @@
 configuration {
 	theme:				"DarkBlue";
 	modi:				"ssh,window,run,drun";
-	font:				"Roboto Mono 12";
+	font:				"liberation mono 12";
 	ssh-client:			"ssh";
 	ssh-command:			"{terminal} -e '{ssh-client} {host}'";
 	color-enabled:			true;
