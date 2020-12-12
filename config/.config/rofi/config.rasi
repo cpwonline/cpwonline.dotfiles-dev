@@ -1,18 +1,17 @@
 configuration {
-	theme:				"DarkBlue";
-	modi:				"ssh,window,run,drun";
-	font:				"liberation mono 12";
-	ssh-client:			"ssh";
-	ssh-command:			"{terminal} -e '{ssh-client} {host}'";
-	color-enabled:			true;
-	separator-style:		"solid";
-	padding:			50;
-	columns:			2;
-	lines:				10;
-	line-margin:			5;
-	width:				720;
-	disable-history:		true;
-	sidebar-mode:			true;
-	fullscreen:			false;
-	show-icons:			false;
+	theme: "DarkBlue";
+	modi: "ssh,window,run,drun";
+	font: "liberation mono 12";
+	ssh-client: "ssh";
+	ssh-command: "{terminal} -e '{ssh-client} {host}'";
+	separator-style: "solid";
+	padding: 50;
+	columns: 2;
+	lines: 10;
+	line-margin: 5;
+	width: 720;
+	disable-history: true;
+	sidebar-mode: true;
+	fullscreen: false;
+	show-icons: false;
 }
