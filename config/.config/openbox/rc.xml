@@ -460,9 +460,9 @@
 				<action name="Execute">
 					<startupnotify>
 						<enabled>true</enabled>
-						<name>rxvt-unicode</name>
+						<name>Lxterminal</name>
 					</startupnotify>
-					<command>urxvt</command>
+					<command>lxterminal</command>
 				</action>
 			</keybind>
 	</keyboard>

@@ -6,18 +6,17 @@ feh --bg-fill '/home/josefelixrc7/.config/openbox/Wallpalper.png' &
 ~/.config/openbox/view-apps.csh --start &
 
 # Secondary
-xscreensaver &
-# conky &
-# redshift-gtk -c ~/.config/redshift/redshift.conf &
+fcitx &
+
 
 # Daemons
+xfce4-screensaver &
 lxpolkit &
 xfce4-notifyd &
-xfce4-power-manager &
 
 # Applets
-# lxclipboard
 xfce4-clipman &
-# xfce4-battery-plugin &
+xfce4-power-manager &
 network-manager-applet || nm-applet &
 volumeicon &
+blueman-applet &
