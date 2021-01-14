@@ -1,13 +1,14 @@
 # Principal
 picom -b &
-tint2 -c ~/.config/tint2/primary.tint2rc &
-tint2 -c ~/.config/tint2/secondary.tint2rc &
+tint2 -c ~/.config/tint2/systray-clock.tint2rc &
+tint2 -c ~/.config/tint2/workspace.tint2rc &
+tint2 -c ~/.config/tint2/taskbar.tint2rc &
 feh --bg-fill '/home/josefelixrc7/.config/openbox/Wallpalper.png' &
 ~/.config/openbox/view-apps.csh --start &
 
 # Secondary
 fcitx &
-
+# gnome-keyring-daemon &
 
 # Daemons
 xfce4-screensaver &
@@ -17,6 +18,6 @@ xfce4-notifyd &
 # Applets
 xfce4-clipman &
 xfce4-power-manager &
-network-manager-applet || nm-applet &
+nm-applet &
 volumeicon &
 blueman-applet &
