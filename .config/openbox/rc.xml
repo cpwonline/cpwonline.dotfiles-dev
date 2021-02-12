@@ -194,12 +194,6 @@
 					<command>notify-send 'Openbox reconfigured.'</command>
 				</action>
 			</keybind>
-		<!-- Exit -->
-			<keybind key="W-e">
-				<action name="Exit">
-					<prompt>yes</prompt>
-				</action>
-			</keybind>
 		
 		<!-- Keybindings for virtual desktop switching -->
 			<keybind key="W-Left">
@@ -467,9 +461,19 @@
 					<command>rofi -show window</command>
 				</action>
 			</keybind>
+			<keybind key="W-w">
+				<action name="Execute">
+					<command>rofi -show run</command>
+				</action>
+			</keybind>
 			<keybind key="W-t">
 				<action name="Execute">
 					<command>lxterminal</command>
+				</action>
+			</keybind>
+			<keybind key="W-e">
+				<action name="Execute">
+					<command>clearine</command>
 				</action>
 			</keybind>
 	</keyboard>
