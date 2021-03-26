@@ -1,4 +1,4 @@
-# CPW Online settings to tint2 (Tertiary Panel)
+# CPW Online settings to tint2 (Systray-Clock)
 
 ## Backgrounds
 
@@ -16,15 +16,29 @@ background_color_hover = #005AB4 100
 background_color_pressed = #000000 0
 background_content_tint_weight = 0
 
+### 2 Tooltip
+
+rounded = 0
+border_width = 0
+border_sides = LRTB
+border_color = #000000 0
+border_color_hover = #000000 0
+border_color_pressed = #000000 0
+border_content_tint_weight = 0
+background_color = #3399ff 80
+background_color_hover = #3399ff 80
+background_color_pressed = #3399ff 80
+background_content_tint_weight = 0
+
 ## Panel
 
 panel_items = FSC
 panel_monitor = all
 panel_position = top right horizontal
 panel_size = 300 35
-panel_shrink = 0
-panel_margin = 0 0
-panel_padding = 0 3 7
+panel_shrink = 1
+panel_margin = 5 0
+panel_padding = 0 2 7
 font_shadow = 0
 panel_background_id = 0
 wm_menu = 1
@@ -54,18 +68,28 @@ systray_monitor = primary
 ## Clock
 
 time1_format = %H:%M
-time1_timezone = %p
+time1_timezone = America/Caracas
 time1_font = liberation mono 9
 # time2_format = 
 # time2_timezone =
 # time2_font = Liberation mono 9
 clock_font_color = #ffffff 100
-clock_padding = 10 3
+clock_padding = 10 0
 clock_background_id = 1
-# clock_tooltip = %a, %d %b. (%m) %Y
-# clock_tooltip_timezone = 
-clock_lclick_command = 
+clock_tooltip = %a, %d %b. (%m) %Y
+clock_tooltip_timezone = 
+clock_lclick_command = orage
 clock_rclick_command = 
 clock_mclick_command = 
 clock_uwheel_command = 
 clock_dwheel_command = 
+
+
+## Tooltip
+
+tooltip_padding = 10 10
+tooltip_show_timeout = 0
+tooltip_hide_timeout = 0
+tooltip_background_id = 2
+tooltip_font = liberation mono 9
+tooltip_font_color = #ffffff 80
