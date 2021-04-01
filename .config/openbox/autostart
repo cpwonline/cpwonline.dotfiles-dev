@@ -8,7 +8,7 @@ feh --bg-fill '/home/josefelixrc7/.config/openbox/Wallpalper.png' &
 
 # Secondary
 fcitx &
-pulseaudio &
+pulseaudio --start &
 
 # Daemons
 xfce4-screensaver &
