@@ -4,7 +4,6 @@ tint2 -c ~/.config/tint2/systray-clock.tint2rc &
 tint2 -c ~/.config/tint2/workspace.tint2rc &
 tint2 -c ~/.config/tint2/taskbar.tint2rc &
 feh --bg-fill '/home/josefelixrc7/.config/openbox/Wallpalper.png' &
-~/.config/openbox/view-apps.csh --start &
 
 # Secondary
 fcitx &

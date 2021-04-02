@@ -41,7 +41,7 @@
 		'Active' - where the active window is -->
 	</placement>
 	<theme>
-		<name>Raven-Cyan</name>
+		<name>cpw-openbox-dark-theme</name>
 		<titleLayout>L</titleLayout>
 		<!--
 			available characters are NDSLIMC, each can occur at most once.
@@ -192,18 +192,6 @@
 				<action name="Reconfigure"/>
 				<action name="Execute">
 					<command>notify-send 'Openbox reconfigured.'</command>
-				</action>
-			</keybind>
-		<!-- Exit session -->
-			<keybind key="W-e">
-				<action name="Exit">
-					<prompt>yes</prompt>
-				</action>
-			</keybind>
-			<keybind key="W-S-e">
-				<action name="Execute">
-					<prompt>Are you shure to shutdown now?</prompt>
-					<command>shutdown now</command>
 				</action>
 			</keybind>
 		
@@ -473,7 +461,7 @@
 					<command>rofi -show window</command>
 				</action>
 			</keybind>
-			<keybind key="W-w">
+			<keybind key="W-z">
 				<action name="Execute">
 					<command>rofi -show run</command>
 				</action>
@@ -483,6 +471,12 @@
 					<command>lxterminal</command>
 				</action>
 			</keybind>
+			<!-- Exit session -->
+				<keybind key="W-e">
+					<action name="Execute">
+						<command>xlunch --config ~/.config/xlunch/xlunch-logout.conf</command>
+					</action>
+				</keybind>
 	</keyboard>
 	<mouse>
 		<dragThreshold>1</dragThreshold>
