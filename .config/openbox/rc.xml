@@ -56,25 +56,25 @@
 		<keepBorder>yes</keepBorder>
 		<animateIconify>yes</animateIconify>
 		<font place="ActiveWindow">
-			<name>liberation mono</name>
+			<name>mono</name>
 			<size>9</size>
 			<!-- font size in points -->
-			<weight>normal</weight>
+			<weight>bold</weight>
 			<!-- 'bold' or 'normal' -->
 			<slant>normal</slant>
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="InactiveWindow">
-			<name>liberation mono</name>
+			<name>mono</name>
 			<size>9</size>
 			<!-- font size in points -->
-			<weight>normal</weight>
+			<weight>bold</weight>
 			<!-- 'bold' or 'normal' -->
 			<slant>normal</slant>
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="MenuHeader">
-			<name>liberation mono</name>
+			<name>mono</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>normal</weight>
@@ -83,7 +83,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="MenuItem">
-			<name>liberation mono</name>
+			<name>mono</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>normal</weight>
@@ -92,7 +92,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="ActiveOnScreenDisplay">
-			<name>liberation mono</name>
+			<name>mono</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
@@ -101,7 +101,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="InactiveOnScreenDisplay">
-			<name>liberation mono</name>
+			<name>mono</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
