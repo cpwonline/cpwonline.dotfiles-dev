@@ -1,0 +1,41 @@
+#!/bin/bash
+
+cd /tmp
+
+# Icons
+curl -s https://api.github.com/repos/cpwonline/linux-resources/releases/latest \
+	| grep "browser_download_url" \
+	| grep "linux-icons.tar.gz" \
+	| cut -d : -f 2,3 \
+	| tr -d \" \
+	| wget -qi -
+gunzip linux-icons.tar.gz
+tar xf linux-icons.tar
+rm -rf linux-icons.tar
+mv -f linux-icons/* /usr/share/icons
+rm -rf linux-icons
+
+# Themes
+curl -s https://api.github.com/repos/cpwonline/linux-resources/releases/latest \
+	| grep "browser_download_url" \
+	| grep "linux-themes.tar.gz" \
+	| cut -d : -f 2,3 \
+	| tr -d \" \
+	| wget -qi -
+gunzip linux-themes.tar.gz
+tar xf linux-themes.tar
+rm -rf linux-themes.tar
+mv -f linux-themes/* /usr/share/themes
+rm -rf linux-themes
+
+wget https://github.com/cpwonline/cpw-openbox-dark-theme/archive/refs/heads/master.zip -O cpw-openbox-dark-theme.zip
+unzip cpw-openbox-dark-theme.zip
+rm -rf cpw-openbox-dark-theme.zip
+mv cpw-openbox-dark-theme-master cpw-openbox-dark-theme
+mv cpw-openbox-dark-theme /usr/share/themes
+
+wget https://github.com/cpwonline/cpw-openbox-light-theme/archive/refs/heads/master.zip -O cpw-openbox-light-theme.zip
+unzip cpw-openbox-light-theme.zip
+rm -rf cpw-openbox-light-theme.zip
+mv cpw-openbox-light-theme-master cpw-openbox-light-theme
+mv cpw-openbox-light-theme /usr/share/themes
