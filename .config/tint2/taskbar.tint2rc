@@ -157,5 +157,5 @@ tooltip_padding = 10 10
 tooltip_show_timeout = 0
 tooltip_hide_timeout = 0
 tooltip_background_id = 6
-tooltip_font = liberation mono 9
+tooltip_font = mono 9
 tooltip_font_color = #ffffff 80

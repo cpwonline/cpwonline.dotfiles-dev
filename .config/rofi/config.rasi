@@ -1,9 +1,9 @@
 configuration {
 	theme: "DarkBlue";
 	modi: "ssh,window,run,drun";
-	font: "liberation mono 12";
+	font: "mono 12";
 	ssh-client: "ssh";
-	ssh-command: "{terminal} -e '{ssh-client} {host}'";
+	ssh-command: "lxterminal -e '{ssh-client} {host}'";
 	separator-style: "solid";
 	padding: 50;
 	columns: 2;
