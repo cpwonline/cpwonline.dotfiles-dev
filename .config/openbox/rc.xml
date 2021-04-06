@@ -474,7 +474,7 @@
 			<!-- Exit session -->
 				<keybind key="W-e">
 					<action name="Execute">
-						<command>xlunch --config ~/.config/xlunch/xlunch-logout.conf</command>
+						<command>xlunch --multiple --config ~/.config/xlunch/xlunch-logout.conf</command>
 					</action>
 				</keybind>
 	</keyboard>
