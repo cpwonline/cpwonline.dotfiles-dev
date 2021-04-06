@@ -23,14 +23,6 @@
 			<item label="Edit Openbox Autostart">
 				<action name="Execute"><command>mousepad ~/.config/openbox/autostart</command></action>
 			</item>
-			<separator/>
-			<item label="Edit Tint2 Settings">
-				<action name="Execute"><command>mousepad ~/.config/tint2/primary.tint2rc</command></action>
-			</item>
-			<separator/>
-			<item label="Edit Rofi settings">
-				<action name="Execute"><command>mousepad ~/.config/rofi/config.rasi</command></action>
-			</item>
 		</menu>
 		<separator/>
 		<menu id="session" label="Session">
@@ -47,13 +39,13 @@
 			<item label="Restart">
 				<action name="Execute">
 					<prompt>Do you want to restart?</prompt>
-					<command>reboot</command>
+					<command>systemctl reboot -i</command>
 				</action>
 			</item>
 			<item label="Shut down">
 				<action name="Execute">
 					<prompt>Do you want to shut down?</prompt>
-					<command>init 0</command>
+					<command>systemctl poweroff -i</command>
 				</action>
 			</item>
 		</menu>

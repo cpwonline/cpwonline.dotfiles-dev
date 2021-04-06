@@ -191,7 +191,7 @@
 			<keybind key="W-r">
 				<action name="Reconfigure"/>
 				<action name="Execute">
-					<command>notify-send 'Openbox reconfigured.'</command>
+					<command>notify-send 'CPW Dev OS reconfigured.'</command>
 				</action>
 			</keybind>
 		
@@ -474,7 +474,7 @@
 			<!-- Exit session -->
 				<keybind key="W-e">
 					<action name="Execute">
-						<command>xlunch --multiple --config ~/.config/xlunch/xlunch-logout.conf</command>
+						<command>xlunch --multiple --config /etc/cpw-dev-os/xlunch/xlunch-logout.conf</command>
 					</action>
 				</keybind>
 	</keyboard>

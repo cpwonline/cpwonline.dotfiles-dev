@@ -1,4 +1,4 @@
-# CPW Online settings to tint2 (Workspace Panel)
+# CPW Online settings for tint2 (Workspace Panel)
 
 ## Backgrounds
 
@@ -35,7 +35,7 @@ background_content_tint_weight = 0
 panel_items = T
 panel_monitor = all
 panel_position = top left horizontal
-panel_size = 120 30
+panel_size = 120 35
 panel_shrink = 0
 panel_margin = 0 0
 panel_padding = 0 0 0

@@ -1,9 +1,9 @@
 # Principal
 picom -b &
-tint2 -c ~/.config/tint2/systray-clock.tint2rc &
-tint2 -c ~/.config/tint2/workspace.tint2rc &
-tint2 -c ~/.config/tint2/taskbar.tint2rc &
-feh --bg-fill ~/.config/openbox/Wallpalper.png &
+tint2 -c /etc/cpw-dev-os/tint2/systray-clock.tint2rc &
+tint2 -c /etc/cpw-dev-os/tint2/workspace.tint2rc &
+tint2 -c /etc/cpw-dev-os/tint2/taskbar.tint2rc &
+feh --bg-fill /usr/share/cpw-dev-os/Wallpalper.png &
 
 # Secondary
 fcitx &
