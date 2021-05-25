@@ -28,15 +28,3 @@ PS1=$PS1"\[\e[36m\]\W "
 PS1=$PS1"\[\e[1m\]\$(gitbranch)"
 PS1=$PS1"\[\e[92m\]]\$"
 PS1=$PS1"\[\e[0;00m\] " 
-
-# Init X server
-read -p "Do you want to init X server? [Y/n] (Default=y): " initx_server
-if [ "$initx_server" == "" ]
-then
-    startx &
-else
-    if [ "$initx_server" != "n" ]
-    then
-    	startx &
-    fi
-fi
