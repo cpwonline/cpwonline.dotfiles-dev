@@ -325,11 +325,6 @@
 					<action name="ToggleShowDesktop"/>
 				</keybind>
 			<!-- Others -->
-				<!--<keybind key="A-Escape">
-					<action name="Lower"/>
-					<action name="FocusToBottom"/>
-					<action name="Unfocus"/>
-				</keybind>-->
 				<keybind key="W-space">
 					<action name="ShowMenu">
 						<menu>client-menu</menu>
@@ -374,19 +369,6 @@
 						<direction>down</direction>
 					</action>
 				</keybind>
-				<!--
-				<keybind key="C-A-Tab">
-					<action name="NextWindow">
-						<panels>yes</panels>
-						<desktop>yes</desktop>
-						<finalactions>
-							<action name="Focus"/>
-							<action name="Raise"/>
-							<action name="Unshade"/>
-						</finalactions>
-					</action>
-				</keybind>
-				-->
 			<!-- Move windows to edge -->
 				<!-- 1/2 display-->
 					<keybind key="W-S-Left">
@@ -453,17 +435,17 @@
 		<!-- Keybindings for running applications -->
 			<keybind key="W-a">
 				<action name="Execute">
-					<command>rofi -show drun</command>
+					<command>rofi -show drun -theme /etc/cpw-dev-os/rofi/launcher/config.rasi</command>
 				</action>
 			</keybind>
 			<keybind key="W-w">
 				<action name="Execute">
-					<command>rofi -show window</command>
+					<command>rofi -show window -theme /etc/cpw-dev-os/rofi/launcher/config.rasi</command>
 				</action>
 			</keybind>
 			<keybind key="W-z">
 				<action name="Execute">
-					<command>rofi -show run</command>
+					<command>rofi -show run -theme /etc/cpw-dev-os/rofi/launcher/config.rasi</command>
 				</action>
 			</keybind>
 			<keybind key="W-t">
@@ -471,12 +453,16 @@
 					<command>lxterminal</command>
 				</action>
 			</keybind>
-			<!-- Exit session -->
-				<keybind key="W-e">
-					<action name="Execute">
-						<command>xlunch --multiple --config /etc/cpw-dev-os/xlunch/xlunch-logout.conf</command>
-					</action>
-				</keybind>
+			<keybind key="W-e">
+				<action name="Execute">
+					<command>/etc/cpw-dev-os/rofi/powermenu/powermenu.sh</command>
+				</action>
+			</keybind>
+			<keybind key="W-p">
+				<action name="Execute">
+					<command>/etc/cpw-dev-os/rofi/keybindings/keybindings.sh</command>
+				</action>
+			</keybind>
 	</keyboard>
 	<mouse>
 		<dragThreshold>1</dragThreshold>
