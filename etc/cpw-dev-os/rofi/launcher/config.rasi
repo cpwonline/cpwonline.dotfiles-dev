@@ -76,7 +76,7 @@ listview {
 	columns:                        1;
 	lines:                          7;
 	spacing:                       	1%;
-	cycle:                          false;
+	cycle:                          true;
 	dynamic:                        true;
 	layout:                         vertical;
 }
