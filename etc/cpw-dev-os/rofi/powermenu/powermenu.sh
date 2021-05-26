@@ -35,26 +35,22 @@ case $chosen in
 	$shutdown)
 		ans=$(confirm_exit &)
 		if [[ "$ans" = "$yes" ]]; then
-			#systemctl poweroff
-			echo "poweroff"
+			systemctl poweroff
 		elif [[ "$ans" = "$no" ]]; then
-			echo "no poweroff"
 			exit 0
 		fi
 	;;
 	$reboot)
 		ans=$(confirm_exit &)
 		if [[ "$ans" = "$yes" ]]; then
-			#systemctl reboot
-			echo "reboot"
+			systemctl reboot
 		elif [[ "$ans" = "$no" ]]; then
-			echo "no reboot"
 			exit 0
 		fi
 	;;
 	$lock)
 		if [[ -f /usr/bin/i3lock ]]; then
-			i3lock -c 5577ff
+			i3lock -c 295683
 		else
 			notify-send "No screen locker found."
 		fi
@@ -62,10 +58,8 @@ case $chosen in
 	$suspend)
 		ans=$(confirm_exit &)
 		if [[ "$ans" = "$yes" ]]; then
-			#systemctl suspend
-			echo "suspend"
+			systemctl suspend
 		elif [[ "$ans" = "$no" ]]; then
-			echo "no suspend"
 			exit 0
 		fi
 	;;
