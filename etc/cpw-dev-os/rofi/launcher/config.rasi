@@ -13,10 +13,11 @@ configuration {
 
 * {
 	al:  				#00000000;
-	bg:  				#000000cc;
-	se:  				#101010ff;
+	bg:  				#111111dd;
+	se:  				#222222ff;
+	se2:  				#555555ff;
 	fg:  				#FFFFFFff;
-	ac:  				#3399ff;
+	ac:  				#295683ff;
 }
 
 window {
@@ -111,9 +112,9 @@ element-text {
 }
 
 element selected {
-	background-color:               @se;
-	text-color:                     @ac;
-	border:				0% 0% 0% 0.3%;
+	background-color:               @se2;
+	text-color:                     @fg;
+	border:				0% 0% 0% 0.5%;
 	border-radius:                  0px;
 	border-color:                  	@ac;
 }
