@@ -56,7 +56,7 @@
 		<keepBorder>yes</keepBorder>
 		<animateIconify>yes</animateIconify>
 		<font place="ActiveWindow">
-			<name>mono</name>
+			<name>Source Code Pro</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
@@ -65,7 +65,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="InactiveWindow">
-			<name>mono</name>
+			<name>Source Code Pro</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
@@ -74,7 +74,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="MenuHeader">
-			<name>mono</name>
+			<name>Source Code Pro</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>normal</weight>
@@ -83,7 +83,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="MenuItem">
-			<name>mono</name>
+			<name>Source Code Pro</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>normal</weight>
@@ -92,7 +92,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="ActiveOnScreenDisplay">
-			<name>mono</name>
+			<name>Source Code Pro</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
@@ -101,7 +101,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="InactiveOnScreenDisplay">
-			<name>mono</name>
+			<name>Source Code Pro</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
@@ -445,7 +445,7 @@
 			</keybind>
 			<keybind key="W-z">
 				<action name="Execute">
-					<command>rofi -show run -theme /etc/cpw-dev-os/rofi/launcher/config.rasi</command>
+					<command>rofi -show run -theme /etc/cpw-dev-os/rofi/launcher/config-run.rasi</command>
 				</action>
 			</keybind>
 			<keybind key="W-t">

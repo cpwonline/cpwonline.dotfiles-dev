@@ -6,7 +6,7 @@
 		<menu id="applications-new"/>
 		<item label="View applications">
 			<action name="Execute">
-				<command>rofi -show drun</command>
+				<command>rofi -show drun -theme /etc/cpw-dev-os/rofi/launcher/config.rasi</command>
 			</action>
 		</item>
 		<separator/>
