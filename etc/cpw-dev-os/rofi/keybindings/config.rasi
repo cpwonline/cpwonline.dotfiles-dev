@@ -1,6 +1,6 @@
 
 configuration {
-	font:				"Monospace 10";
+	font:				"Source Code Pro 10";
 	show-icons:                     false;
 	icon-theme: 			"Vimix-dark";
 	display-drun: 			"Applications";

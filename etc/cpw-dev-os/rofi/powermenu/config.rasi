@@ -1,6 +1,6 @@
 
 configuration {
-	font:				"Monospace 10";
+	font:				"Source Code Pro 10";
 	show-icons:                     false;
 	icon-theme: 			"Vimix-dark";
 	drun-display-format:            "{name}";
@@ -84,7 +84,7 @@ element {
 }
 
 element-text {
-	font:				"Monospace 50";
+	font:				"Source Code Pro 50";
 	expand:                         true;
 	horizontal-align:               0.5;
 	vertical-align:                 0.5;
