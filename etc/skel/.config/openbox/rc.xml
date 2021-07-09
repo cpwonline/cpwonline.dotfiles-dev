@@ -435,12 +435,17 @@
 		<!-- Keybindings for running applications -->
 			<keybind key="W-a">
 				<action name="Execute">
-					<command>rofi -show drun -theme /etc/cpw-dev-os/rofi/launcher/config.rasi</command>
+					<command>rofi -show drun -theme /etc/cpw-dev-os/rofi/launcher/config-drun.rasi</command>
 				</action>
 			</keybind>
 			<keybind key="W-w">
 				<action name="Execute">
-					<command>rofi -show window -theme /etc/cpw-dev-os/rofi/launcher/config.rasi</command>
+					<command>rofi -show windowcd -theme /etc/cpw-dev-os/rofi/launcher/config-window.rasi</command>
+				</action>
+			</keybind>
+			<keybind key="W-S-w">
+				<action name="Execute">
+					<command>rofi -show window -theme /etc/cpw-dev-os/rofi/launcher/config-window.rasi</command>
 				</action>
 			</keybind>
 			<keybind key="W-z">
