@@ -66,7 +66,7 @@ case $chosen in
 	$logout)
 		ans=$(confirm_exit &)
 		if [[ "$ans" = "$yes" ]]; then
-			pkill X
+			openbox --exit
 		elif [[ "$ans" = "$no" ]]; then
 			exit 0
 		fi
