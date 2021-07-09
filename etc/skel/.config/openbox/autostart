@@ -1,22 +1,19 @@
 # Principal
+pulseaudio --start &
+xfce4-power-manager &
+xfce4-notifyd &
+bluez &
+fcitx &
 picom -b &
-tint2 -c /etc/cpw-dev-os/tint2/systray-clock.tint2rc &
-tint2 -c /etc/cpw-dev-os/tint2/workspace.tint2rc &
-tint2 -c /etc/cpw-dev-os/tint2/taskbar.tint2rc &
-feh --bg-fill /usr/share/cpw-dev-os/Wallpalper.png &
+lxpolkit &
 
 # Secondary
-fcitx &
-pulseaudio --start &
-
-# Daemons
-xfce4-screensaver &
-lxpolkit &
-xfce4-notifyd &
+tint2 -c /etc/cpw-dev-os/tint2/systray-clock.tint2rc &
+tint2 -c /etc/cpw-dev-os/tint2/workspace.tint2rc &
+feh --bg-fill /usr/share/cpw-dev-os/Wallpalper.png &
 
 # Applets
 xfce4-clipman &
-xfce4-power-manager &
 nm-applet &
 volumeicon &
 blueman-applet &
