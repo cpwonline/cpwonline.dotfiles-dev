@@ -78,9 +78,9 @@ clock_padding = 10 0
 clock_background_id = 1
 clock_tooltip = %a, %d %b. (%m) %Y
 clock_tooltip_timezone = 
-clock_lclick_command = orage
-clock_rclick_command = 
-clock_mclick_command = 
+clock_lclick_command = gsimplecal
+clock_rclick_command = gsimplecal
+clock_mclick_command = gsimplecal
 clock_uwheel_command = 
 clock_dwheel_command = 
 
