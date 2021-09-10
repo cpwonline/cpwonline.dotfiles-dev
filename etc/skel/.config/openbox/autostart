@@ -1,11 +1,12 @@
 # Principal
 pulseaudio --start &
-xfce4-power-manager &
+lxqt-powermanagement &
 xfce4-notifyd &
 bluez &
-fcitx &
+fcitx5 &
 picom -b &
-lxpolkit &
+lxqt-policykit-agent &
+lxqt-globalkeysd &
 
 # Secondary
 tint2 -c /etc/cpw-dev-os/tint2/systray-clock.tint2rc &
