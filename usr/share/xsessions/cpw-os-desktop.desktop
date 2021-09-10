@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=CPW OS Desktop
+Comment=CPW OS for desktop users
+Exec=/usr/bin/cpwos-session-desktop
+TryExec=/usr/bin/cpwos-session-desktop
+Icon=/usr/share/cpwos/logo.png
+Type=Application
