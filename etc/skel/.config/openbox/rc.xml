@@ -455,7 +455,7 @@
 			</keybind>
 			<keybind key="W-t">
 				<action name="Execute">
-					<command>lxterminal</command>
+					<command>konsole</command>
 				</action>
 			</keybind>
 			<keybind key="W-e">
