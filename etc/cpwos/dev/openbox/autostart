@@ -1,0 +1,19 @@
+# Principal
+pulseaudio --start &
+lxqt-powermanagement &
+xfce4-notifyd &
+fcitx5 &
+picom -b --config /etc/cpwos/dev/picom/picom.conf &
+lxqt-policykit-agent &
+lxqt-globalkeysd &
+
+# Secondary
+pcmanfm-qt --desktop --profile cpwosdev &
+tint2 -c /etc/cpwos/dev/tint2/systray-clock.tint2rc &
+tint2 -c /etc/cpwos/dev/tint2/workspace.tint2rc &
+
+# Applets
+xfce4-clipman &
+nm-applet &
+volumeicon &
+blueman-applet &
