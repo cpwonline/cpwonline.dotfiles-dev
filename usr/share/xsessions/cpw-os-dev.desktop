@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=CPW OS Dev
+DesktopNames=CPW OS
 Comment=CPW OS for developers
 Exec=/usr/bin/cpwos-session-dev
 TryExec=/usr/bin/cpwos-session-dev
-Icon=/usr/share/cpwos/gogo.png
+Icon=/usr/share/cpwos/logo.png
 Type=Application
