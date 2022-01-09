@@ -1,5 +1,3 @@
 #!/bin/bash
 
-xinput --set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Tapping Enabled' 1 &
-
-xbacklight -set 30 &
+xinput --set-prop 12 307 1

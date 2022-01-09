@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+
 # Execute xprofile
 [ -f /etc/xprofile ] && . /etc/xprofile
 [ -f ~/.xprofile ] && . ~/.xprofile
@@ -11,4 +13,3 @@ elif [ -f /etc/X11/xinit/Xclients ]; then
     exec $CK_XINIT_SESSION $SSH_AGENT /etc/X11/xinit/Xclients || \
     exec $CK_XINIT_SESSION $SSH_AGENT /etc/X11/xinit/Xclients
 fi
-
