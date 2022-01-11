@@ -32,7 +32,7 @@ background_content_tint_weight = 0
 
 ## Panel
 
-panel_items = FSC
+panel_items = FSPC
 panel_monitor = all
 panel_position = top right horizontal
 panel_size = 50% 35
@@ -93,3 +93,21 @@ tooltip_hide_timeout = 0
 tooltip_background_id = 2
 tooltip_font = Source Code Pro 9
 tooltip_font_color = #ffffff 80
+
+## Buttons
+
+### Button 0 (Volume)
+
+button = new
+button_icon = audio-volume-high
+button_text =
+button_font_color = #ffffff 100
+button_background_id = 1
+button_centered = 0
+button_padding = 0 0 0
+button_max_icon_size = 24
+button_lclick_command = /etc/cpwos/dev/rofi/volume/volume.sh
+button_rclick_command =
+button_mclick_command =
+button_uwheel_command =
+button_dwheel_command =
