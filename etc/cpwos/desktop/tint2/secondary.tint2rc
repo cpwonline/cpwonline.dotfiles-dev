@@ -179,7 +179,7 @@ tooltip_font_color = #333333 80
 ### Button 1 (Menu)
 
 button = new
-button_icon = /usr/share/cpw-os/tint2/menu.svg
+button_icon = /usr/share/cpwos/tint2/menu.svg
 button_text = 
 # button_font_color = #ffffff 100
 button_background_id = 2
@@ -195,7 +195,7 @@ button_dwheel_command =
 ### Button 2 (Menu)
 
 button = new
-button_icon = /usr/share/cpw-os/tint2/menu.svg
+button_icon = /usr/share/cpwos/tint2/menu.svg
 button_text = 
 # button_font_color = #ffffff 100
 button_background_id = 2

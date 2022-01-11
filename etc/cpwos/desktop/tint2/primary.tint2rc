@@ -165,14 +165,14 @@ tooltip_font_color = #ffffff 80
 ### Button 0 (Menu)
 
 button = new
-button_icon = /usr/share/cpw-os/tint2/menu.svg
+button_icon = /usr/share/cpwos/tint2/menu.svg
 button_text = 
 button_font_color = #ffffff 100
 button_background_id = 2
 button_centered = 0
 button_padding = 15 15 7
 button_max_icon_size = 0
-button_lclick_command = xlunch --multiple --config ~/.config/xlunch/xlunch_1.conf --input ~/.config/xlunch/entries.dsv
+button_lclick_command = rofi -show drun -theme /etc/cpwos/desktop/rofi/launcher/config-drun.rasi
 button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 
@@ -181,14 +181,14 @@ button_dwheel_command =
 ### Button 1 (Terminal)
 
 button = new
-button_icon = /usr/share/cpw-os/tint2/terminal.svg
+button_icon = /usr/share/cpwos/tint2/terminal.svg
 button_text = 
 button_font_color = #ffffff 100
 button_background_id = 2
 button_centered = 0
 button_padding = 15 15 7
 button_max_icon_size = 0
-button_lclick_command = lxterminal
+button_lclick_command = konsole || lxterminal
 button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 
@@ -197,13 +197,13 @@ button_dwheel_command =
 ### Button 2 (Files browser)
 
 button = new
-button_icon = /usr/share/cpw-os/tint2/files.svg
+button_icon = /usr/share/cpwos/tint2/files.svg
 button_font_color = #ffffff 100
 button_background_id = 2
 button_centered = 1
 button_padding = 15 15 7
 button_max_icon_size = 0
-button_lclick_command = Thunar
+button_lclick_command = pcmanfm-qt
 button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 
@@ -212,7 +212,7 @@ button_dwheel_command =
 ### Button 3 (Web browser)
 
 button = new
-button_icon = /usr/share/cpw-os/tint2/browser.svg
+button_icon = /usr/share/cpwos/tint2/browser.svg
 button_font_color = #ffffff 100
 button_background_id = 2
 button_centered = 1
@@ -227,13 +227,13 @@ button_dwheel_command =
 ### Button 4 (Editor)
 
 button = new
-button_icon = /usr/share/cpw-os/tint2/editor.svg
+button_icon = /usr/share/cpwos/tint2/editor.svg
 button_font_color = #ffffff 100
 button_background_id = 2
 button_centered = 1
 button_padding = 15 15 7
 button_max_icon_size = 0
-button_lclick_command = mousepad
+button_lclick_command = kate || mousepad || leafpad || geany
 button_rclick_command = 
 button_mclick_command = 
 button_uwheel_command = 
