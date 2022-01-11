@@ -2,11 +2,11 @@
 
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 	<menu id="root-menu" label="Openbox 3">
-		<separator label="CPW Online"/>
+		<separator label="CPW OS Dev"/>
 		<menu id="applications-new"/>
 		<item label="View applications">
 			<action name="Execute">
-				<command>rofi -show drun -theme /etc/cpw-dev-os/rofi/launcher/config.rasi</command>
+				<command>rofi -show drun -theme /etc/cpwos/dev/rofi/launcher/config-drun.rasi</command>
 			</action>
 		</item>
 		<separator/>
@@ -15,13 +15,13 @@
 				<action name="Reconfigure" />
 			</item>
 			<item label="Edit Openbox Menu">
-				<action name="Execute"><command>mousepad ~/.config/openbox/menu.xml</command></action>
+				<action name="Execute"><command>xdg-open ~/.config/openbox/menu.xml</command></action>
 			</item>
 			<item label="Edit Openbox RC">
-				<action name="Execute"><command>mousepad ~/.config/openbox/rc.xml</command></action>
+				<action name="Execute"><command>xdg-open ~/.config/openbox/rc.xml</command></action>
 			</item>
 			<item label="Edit Openbox Autostart">
-				<action name="Execute"><command>mousepad ~/.config/openbox/autostart</command></action>
+				<action name="Execute"><command>xdg-open ~/.config/openbox/autostart</command></action>
 			</item>
 		</menu>
 		<separator/>

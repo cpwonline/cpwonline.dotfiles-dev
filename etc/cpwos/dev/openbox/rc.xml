@@ -432,6 +432,7 @@
 						<action name="MoveToEdge"><direction>east</direction></action>
 						<action name="MoveToEdge"><direction>south</direction></action>
 					</keybind>
+
 		<!-- Keybindings for running applications -->
 			<keybind key="W-a">
 				<action name="Execute">
@@ -466,6 +467,33 @@
 			<keybind key="W-p">
 				<action name="Execute">
 					<command>/etc/cpwos/dev/rofi/keybindings/keybindings.sh</command>
+				</action>
+			</keybind>
+
+		<!-- Keybindings for system actions -->
+			<keybind key="XF86AudioRaiseVolume">
+				<action name="Execute">
+					<command>notify-send 'Volume Up'</command>
+				</action>
+			</keybind>
+			<keybind key="XF86AudioLowerVolume">
+				<action name="Execute">
+					<command>notify-send 'Volume Down'</command>
+				</action>
+			</keybind>
+			<keybind key="XF86MonBrightnessUp">
+				<action name="Execute">
+					<command>notify-send 'Brightness Up'</command>
+				</action>
+			</keybind>
+			<keybind key="XF86MonBrightnessDown">
+				<action name="Execute">
+					<command>notify-send 'Brightness Down'</command>
+				</action>
+			</keybind>
+			<keybind key="XF86PowerOff">
+				<action name="Execute">
+					<command>/etc/cpwos/dev/rofi/powermenu/powermenu.sh</command>
 				</action>
 			</keybind>
 	</keyboard>
