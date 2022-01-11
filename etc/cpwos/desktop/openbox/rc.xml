@@ -16,13 +16,13 @@
 		under the mouse pointer. when followMouse is enabled -->
 		<underMouse>no</underMouse>
 		<!-- move focus under the mouse, even when the mouse is not moving -->
-		<focusDelay>200</focusDelay>
+		<focusDelay>100</focusDelay>
 		<!-- when followMouse is enabled, the mouse must be inside the window for
 		this many milliseconds (1000 = 1 sec) before moving focus to it -->
 		<raiseOnFocus>no</raiseOnFocus>
 		<!-- when followMouse is enabled, and a window is given focus by moving the
 		mouse into it, also raise the window -->
-	</focus>
+		</focus>
 	<placement>
 		<policy>Smart</policy>
 		<!-- 'Smart' or 'UnderMouse' -->
@@ -56,8 +56,8 @@
 		<keepBorder>yes</keepBorder>
 		<animateIconify>yes</animateIconify>
 		<font place="ActiveWindow">
-			<name>sans</name>
-			<size>10</size>
+			<name>Source Code Pro</name>
+			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
 			<!-- 'bold' or 'normal' -->
@@ -65,8 +65,8 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="InactiveWindow">
-			<name>sans</name>
-			<size>10</size>
+			<name>Source Code Pro</name>
+			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
 			<!-- 'bold' or 'normal' -->
@@ -74,7 +74,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="MenuHeader">
-			<name>sans</name>
+			<name>Source Code Pro</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>normal</weight>
@@ -83,7 +83,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="MenuItem">
-			<name>sans</name>
+			<name>Source Code Pro</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>normal</weight>
@@ -92,7 +92,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="ActiveOnScreenDisplay">
-			<name>sans</name>
+			<name>Source Code Pro</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
@@ -101,7 +101,7 @@
 			<!-- 'italic' or 'normal' -->
 		</font>
 		<font place="InactiveOnScreenDisplay">
-			<name>sans</name>
+			<name>Source Code Pro</name>
 			<size>9</size>
 			<!-- font size in points -->
 			<weight>bold</weight>
@@ -191,10 +191,10 @@
 			<keybind key="W-r">
 				<action name="Reconfigure"/>
 				<action name="Execute">
-					<command>notify-send 'Openbox reconfigured.'</command>
+					<command>notify-send 'CPW Dev OS reconfigured.'</command>
 				</action>
 			</keybind>
-		
+
 		<!-- Keybindings for virtual desktop switching -->
 			<keybind key="W-Left">
 				<action name="GoToDesktop">
@@ -325,11 +325,6 @@
 					<action name="ToggleShowDesktop"/>
 				</keybind>
 			<!-- Others -->
-				<!--<keybind key="A-Escape">
-					<action name="Lower"/>
-					<action name="FocusToBottom"/>
-					<action name="Unfocus"/>
-				</keybind>-->
 				<keybind key="W-space">
 					<action name="ShowMenu">
 						<menu>client-menu</menu>
@@ -374,19 +369,6 @@
 						<direction>down</direction>
 					</action>
 				</keybind>
-				<!--
-				<keybind key="C-A-Tab">
-					<action name="NextWindow">
-						<panels>yes</panels>
-						<desktop>yes</desktop>
-						<finalactions>
-							<action name="Focus"/>
-							<action name="Raise"/>
-							<action name="Unshade"/>
-						</finalactions>
-					</action>
-				</keybind>
-				-->
 			<!-- Move windows to edge -->
 				<!-- 1/2 display-->
 					<keybind key="W-S-Left">
@@ -450,23 +432,65 @@
 						<action name="MoveToEdge"><direction>east</direction></action>
 						<action name="MoveToEdge"><direction>south</direction></action>
 					</keybind>
+
 		<!-- Keybindings for running applications -->
 			<keybind key="W-a">
 				<action name="Execute">
-					<command>xlunch --multiple --config ~/.config/xlunch/xlunch_1.conf --input ~/.config/xlunch/entries.dsv</command>
+					<command>rofi -show drun -theme /etc/cpwos/desktop/rofi/launcher/config-drun.rasi</command>
+				</action>
+			</keybind>
+			<keybind key="W-w">
+				<action name="Execute">
+					<command>rofi -show windowcd -theme /etc/cpwos/desktop/rofi/launcher/config-window.rasi</command>
+				</action>
+			</keybind>
+			<keybind key="W-S-w">
+				<action name="Execute">
+					<command>rofi -show window -theme /etc/cpwos/desktop/rofi/launcher/config-window.rasi</command>
+				</action>
+			</keybind>
+			<keybind key="W-z">
+				<action name="Execute">
+					<command>rofi -show run -theme /etc/cpwos/desktop/rofi/launcher/config-run.rasi</command>
 				</action>
 			</keybind>
 			<keybind key="W-t">
 				<action name="Execute">
-					<command>lxterminal</command>
+					<command>konsole</command>
 				</action>
 			</keybind>
-			<!-- Exit session -->
-				<keybind key="W-e">
-					<action name="Execute">
-						<command>xlunch --multiple --config ~/.config/xlunch/xlunch-logout.conf</command>
-					</action>
-				</keybind>
+			<keybind key="W-e">
+				<action name="Execute">
+					<command>/etc/cpwos/desktop/rofi/powermenu/powermenu.sh</command>
+				</action>
+			</keybind>
+			<keybind key="W-p">
+				<action name="Execute">
+					<command>/etc/cpwos/desktop/rofi/keybindings/keybindings.sh</command>
+				</action>
+			</keybind>
+
+		<!-- Keybindings for system actions -->
+			<keybind key="XF86AudioRaiseVolume">
+				<action name="Execute">
+					<command>notify-send 'Volume Up'</command>
+				</action>
+			</keybind>
+			<keybind key="XF86AudioLowerVolume">
+				<action name="Execute">
+					<command>notify-send 'Volume Down'</command>
+				</action>
+			</keybind>
+			<keybind key="XF86MonBrightnessUp">
+				<action name="Execute">
+					<command>notify-send 'Brightness Up'</command>
+				</action>
+			</keybind>
+			<keybind key="XF86MonBrightnessDown">
+				<action name="Execute">
+					<command>notify-send 'Brightness Down'</command>
+				</action>
+			</keybind>
 	</keyboard>
 	<mouse>
 		<dragThreshold>1</dragThreshold>
@@ -856,7 +880,7 @@
 		# order that they appear in this list
 
 
-		# each rule element can be left out or set to 'default' to specify to not 
+		# each rule element can be left out or set to 'default' to specify to not
 		# change that attribute of the window
 
 		<decor>yes</decor>
