@@ -3,7 +3,7 @@
 # Variables
 theme1="config-powermenu"
 theme2="config-dialog"
-dir="/etc/cpw-dev-os/rofi/powermenu"
+dir="/etc/cpwos/desktop/rofi/powermenu"
 uptime=$(uptime -p | sed -e 's/up //g')
 rofi_command="rofi -theme $dir/$theme1"
 rofi_dialog="rofi -theme $dir/$theme2"
@@ -16,11 +16,11 @@ lock_text="2"
 suspend_text="3"
 logout_text="4"
 
-shutdown="$shutdown_text\0icon\x1f/usr/share/cpw-dev-os/poweroff.png"
-reboot="$reboot_text\0icon\x1f/usr/share/cpw-dev-os/reboot.png"
-lock="$lock_text\0icon\x1f/usr/share/cpw-dev-os/lock.png"
-suspend="$suspend_text\0icon\x1f/usr/share/cpw-dev-os/suspend.png"
-logout="$logout_text\0icon\x1f/usr/share/cpw-dev-os/logout.png"
+shutdown="$shutdown_text\0icon\x1f/usr/share/cpwos/poweroff.png"
+reboot="$reboot_text\0icon\x1f/usr/share/cpwos/reboot.png"
+lock="$lock_text\0icon\x1f/usr/share/cpwos/lock.png"
+suspend="$suspend_text\0icon\x1f/usr/share/cpwos/suspend.png"
+logout="$logout_text\0icon\x1f/usr/share/cpwos/logout.png"
 
 yes="Yes"
 no="No"
