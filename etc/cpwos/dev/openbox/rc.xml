@@ -473,22 +473,27 @@
 		<!-- Keybindings for system actions -->
 			<keybind key="XF86AudioRaiseVolume">
 				<action name="Execute">
-					<command>notify-send 'Volume Up'</command>
+					<command>/usr/bin/cpwos/volume_up.sh</command>
 				</action>
 			</keybind>
 			<keybind key="XF86AudioLowerVolume">
 				<action name="Execute">
-					<command>notify-send 'Volume Down'</command>
+					<command>/usr/bin/cpwos/volume_down.sh</command>
+				</action>
+			</keybind>
+			<keybind key="XF86AudioMute">
+				<action name="Execute">
+					<command>/usr/bin/cpwos/volume_mute.sh</command>
 				</action>
 			</keybind>
 			<keybind key="XF86MonBrightnessUp">
 				<action name="Execute">
-					<command>notify-send 'Brightness Up'</command>
+					<command>/usr/bin/cpwos/brightness_up.sh</command>
 				</action>
 			</keybind>
 			<keybind key="XF86MonBrightnessDown">
 				<action name="Execute">
-					<command>notify-send 'Brightness Down'</command>
+					<command>/usr/bin/cpwos/brightness_down.sh</command>
 				</action>
 			</keybind>
 			<keybind key="XF86PowerOff">
